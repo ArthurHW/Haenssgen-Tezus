@@ -1,0 +1,123 @@
+/* 
+    Geral
+*/
+
+:root {
+    --brown-yellow: #BE9655;
+    --brown: #502305;
+    --light-yellow: #f0e6d2;
+    --light-gray: #DFD4CE;
+    --gray: #00000029;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Sintony;
+}
+
+/* 
+    Header
+*/
+
+header {
+    height: 110px;
+    border-bottom: .5px solid var(--light-yellow);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(80%, 1200px);
+    margin: auto;
+    height: 100%;
+}
+
+header input {
+    border: none;
+    outline: none;
+
+    height: 46px;
+    border-radius: 23px;
+    font-size: 14px;
+    padding: 5px 12px;  
+    width: 378px;
+
+    background-color: var(--light-yellow);
+    color: var(--brown-yellow);
+
+    background-image: url("../images/header/search.svg");
+    background-repeat: no-repeat;
+    text-indent: 10px;
+    background-position: 95%;
+}
+
+header input::placeholder {
+    color: var(--brown-yellow);
+}
+
+header .icones {
+    display: flex;
+    align-items: center;
+}
+
+header .icones .icone-container {
+    display :flex;
+
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+header .icones .icone-container .icone {
+    margin-right: 10px;
+}
+
+header .icones .icone-container .nome {
+    color: var(--brown);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header .icones .icone-container .mensagem {
+    color: var(--brown-yellow); 
+    font-size: 12px;
+}
+
+
+.linhas {
+    height: 60px;
+
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linhas .linha {
+    color: var(--brown-yellow);
+    font-weight: bold;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.linhas .linha:hover {
+    color: var(--brown);
+}
+
+.linhas .linha .icone-linha {
+    margin-right: 1rem;
+}
+
+/* 
+    Main
+*/
