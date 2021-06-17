@@ -26,7 +26,7 @@ body {
 
 header {
     height: 110px;
-    border-bottom: .5px solid var(--light-yellow);
+    border-bottom: 1px solid var(--light-yellow);
 }
 
 header .container {
@@ -88,6 +88,10 @@ header .icones .icone-container .mensagem {
     font-size: 12px;
 }
 
+/* 
+    Linhas
+*/
+
 
 .linhas {
     height: 60px;
@@ -103,11 +107,11 @@ header .icones .icone-container .mensagem {
     color: var(--brown-yellow);
     font-weight: bold;
     font-size: 14px;
+    text-decoration: none;  
 
     display: flex;
     align-items: center;
-    cursor: pointer;
-    transition: .2s;
+    transition: .1s;
 }
 
 .linhas .linha:hover {
@@ -121,3 +125,427 @@ header .icones .icone-container .mensagem {
 /* 
     Main
 */
+
+/* 
+    Banner
+*/
+
+main .banner-container {
+    position: relative;
+    height: 500px;
+    /* background-image: url(../images/home/haenssgen_banner_01_desk.png); */
+}
+
+main .banner-container .slider {
+    display: block;
+    position: relative;
+    height: 100%;
+}
+
+main .banner-container .slider li {
+    width: 100%;
+    list-style: none;
+    position: absolute;
+}
+
+main .banner-container .slider input {
+    display: none;
+}
+
+main .banner-container .slider .banner {
+    background-size: cover;
+    height: 500px;  
+}
+
+main .banner-container .slider .banner.animate {
+    /* animation-name: slider-animation;
+    animation-duration: 1s; */
+}
+
+main .banner-container .slider .banner#banner1 {
+    background-image: url(../images/home/haenssgen_banner_01_desk.png);
+}
+
+main .banner-container .slider .banner#banner2 {
+    background-image: url(../images/home/haenssgen_banner_01_desk.png);
+}
+
+main .banner-container .slider .banner#banner3 {
+    background-image: url(../images/home/haenssgen_banner_01_desk.png);
+}
+
+main .banner-container .slider label {
+    background-color: var(--brown-yellow);
+    opacity: .5;
+    border-radius: 50%;
+    bottom: 20px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+main .banner-container .slider li:nth-child(1) label {
+    left: calc(50% - 35px);
+}
+
+main .banner-container .slider li:nth-child(2) label {
+    left: calc(50% - 5px)
+}
+
+main .banner-container .slider li:nth-child(3) label {
+    left: calc(50% + 25px);
+}
+
+main .banner-container .slider .banner {
+    opacity: 0;
+    visibility: hidden;
+}
+
+main .banner-container .slider li input:checked ~ .banner {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+main .banner-container .slider li input:checked ~ label {
+    opacity: 1;
+} 
+
+@keyframes slider-animation {
+    from {
+        /* opacity: 0.5; */
+        transform: translate(-100vw);
+    } 
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+/* 
+    After Banner
+*/
+
+main .after-banner {
+    height: 164px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    background-color: var(--light-yellow);
+}
+
+main .after-banner .container {
+    width: min(90%, 1200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .after-banner .qualidades {
+    display: flex;
+    align-items: center;
+}
+
+main .after-banner .qualidades .icone {
+    margin-right: 20px;
+    position: relative;
+    top: -6px;
+}
+
+main .after-banner .qualidades .qualidade {
+    color: var(--brown);
+    font-size: 1rem;
+}
+
+main .after-banner .qualidades .adicional {
+    color: var(--brown-yellow);
+    font-size: 14px;
+}
+
+/* 
+    Linhas e Produtos
+*/
+
+/* 
+    Linha Food Service
+*/
+
+main .linha-container {
+    margin: auto;
+    width: min(1200px, 90%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+}
+
+main .linha-container .linha {
+    width: 480px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--brown);
+    position: absolute;
+    left:0;
+}
+
+main .linha-container .linha img{
+    margin-top: 1px;
+    margin-bottom: 21px;
+}
+
+main .linha-container .linha h3 {
+    color: var(--brown-yellow);
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+main .linha-container .linha > p {
+    color: white;
+    font-size: 14px;
+    width: 180px;
+    margin-bottom: 55px;
+    line-height: 24px;
+}
+
+main .linha-container .linha a {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100px;
+}
+
+main .linha-container .linha a p {
+    color: var(--brown-yellow);
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+main .linha-container .linha a .ver-tudo {
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   background-color: var(--brown-yellow); 
+   background-image: url(../images/home/arrow-right-1.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/* 
+    Produtos
+*/
+
+main .linha-container .produtos {
+    display: flex;
+    position: relative;
+    top: 30px;
+    margin-bottom: 100px;
+    /* position: absolute;
+    top: 30px;
+    left: 336px; */
+}
+
+main .linha-container .produtos .produto {
+    padding: 25px;
+    width: 276px;
+    
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid var(--light-yellow);
+    margin-right: 30px;
+
+}
+
+main .linha-container .produtos .produto .header-produto {
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+}
+
+main .linha-container .produtos .produto .header-produto .desconto {
+    background-color: var(--brown);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    height: 24px;
+    width: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .linha-container .produtos .produto .header-produto .desconto.oculto {
+    visibility: hidder;
+    opacity: 0;
+}
+
+main .linha-container .produtos .produto .container-imagem {
+    position: relative;
+}
+
+main .linha-container .produtos .produto .container-imagem button {
+    font-size: 14px;
+    font-weight: bold;
+
+    border: none;
+    height: 46px;
+    width: 236px;
+    border-radius: 23px;
+
+    position: absolute;
+    bottom: 5px;
+
+    cursor: pointer;
+}
+
+main .linha-container .produtos .produto .container-imagem button.comprar {
+    color: white;
+    background-color: var(--brown);
+}
+
+main .linha-container .produtos .produto .container-imagem button.avise-me {
+    color: var(--brown);
+    background-color: var(--light-gray);
+}
+
+main .linha-container .produtos .produto .container-imagem .comprar {
+
+}
+
+main .linha-container .produtos .produto .nome {
+    color: var(--brown);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+main .linha-container .produtos .produto .de {
+    text-decoration: line-through;
+    height: 18px;
+    font-size: 14px;
+    color: var(--brown-yellow);
+    margin-top: 20px;
+}
+
+main .linha-container .produtos .produto .preço {  
+    color: var(--brown);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px; 
+} 
+
+main .linha-container .produtos .produto .pagamento {
+    font-size: 14px;
+    color: var(--brown);
+    margin-top: 10px;
+}
+
+/* 
+    Banner Destaques
+*/
+
+main .banner-destaques {
+    width: min(1200px, 90%);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/* 
+    Footer
+*/
+
+footer {
+    height: 486px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 166px;
+}
+
+/* 
+    Novidades
+*/
+
+footer .novidades {
+    width: 1200px;
+    height: 132px;
+    border-radius: 20px;
+    background-color: var(--brown);
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    position: absolute;
+    top: -86px;
+
+}
+
+footer .novidades p {
+    color: var(--brown-yellow);
+    font-size: 18px;
+    font-weight: bold;
+    width: 242px;
+}
+
+footer .novidades form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .novidades form input {
+    width: 296px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: white;
+    color: var(--brown-yellow);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-indent: 20px;
+    margin-right: 30px;
+}
+
+footer .novidades form input::placeholder {
+    color: var(--brown-yellow);
+}
+
+footer .novidades form button {
+    color: white;
+    background-color: var(--brown-yellow);
+    font-size: 14px;
+    font-weight: bold;
+
+    border-radius: 23px;
+    width: 146px;
+    height: 46px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 
+    Container de Informações
+*/
+
+footer .info-container {
+    background-color: var(--light-yellow);
+    height: 314px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .info-container > div {
+    width: min(1200px, 90%);
+}

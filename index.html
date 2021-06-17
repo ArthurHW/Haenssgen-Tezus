@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
     <title>Haenssgen</title>
 </head>
 <body>
@@ -48,26 +49,304 @@
     </header>
 
     <div class="linhas">
-        <div class="linha">
-            <img class="icone-linha" src="images/header/food-service.svg" alt="linha food-service">
-            Linha Food Service
-        </div>
-        <div class="linha">
+
+        <a href="" class="linha">
+                <img class="icone-linha" src="images/header/food-service.svg" alt="linha food-service">
+                Linha Food Service
+        </a>
+
+        <a href="" class="linha">
             <img class="icone-linha" src="images/header/functional.svg" alt="linha funcional">
             Linha Funcional
-        </div>
-        <div class="linha">
+        </a>
+
+        <a href="" class="linha">
             <img class="icone-linha" src="images/header/star.svg" alt="linha tradicional">
                 Linha Tradicional
+        </a>
+    </div>
+
+
+    <main>
+
+        <div class="banner-container">
+            <ul class="slider">
+                <li>
+                      <input type="radio" id="slide1" name="slide" checked>
+                      <label for="slide1"></label>
+                      <div id="banner1" class="banner animate"></div>
+                </li>
+                <li>
+                      <input type="radio" id="slide2" name="slide">
+                      <label for="slide2"></label>
+                      <div id="banner2" class="banner"></div>
+                </li>
+                <li>
+                      <input type="radio" id="slide3" name="slide">
+                      <label for="slide3"></label>
+                      <div id="banner3" class="banner"></div>
+                </li>
+            </ul>
         </div>
+
+        <div class="after-banner">
+            <div class="container">
+                <div class="qualidades">
+                    <img class="icone" src="images/home/tradition.svg" alt="">
+                    <div>
+                        <div class="qualidade">125 anos de tradição</div>
+                        <div class="adicional">em receitas de sucesso</div>
+                    </div>
+                </div>
+    
+                <div class="qualidades">
+                    <img class="icone" src="images/home/tradition.svg" alt="">
+                    <div>
+                        <div class="qualidade">Entrega com agilidade</div>
+                        <div class="adicional">nas regiões sul e sudeste</div>
+                    </div>
+                </div>
+    
+                <div class="qualidades">
+                    <img class="icone" src="images/home/card.svg" alt="">
+                    <div>
+                        <div class="qualidade">10x sem juros</div>
+                        <div class="adicional">para pagamentos no cartão</div>
+                    </div>
+                </div>
+    
+                <div class="qualidades">
+                    <img class="icone" src="images/home/discount.svg" alt="">
+                    <div>
+                        <div class="qualidade">5% de desconto</div>
+                        <div class="adicional">para pagamentos no boleto</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="linha-container">
+
+            <div id="linha-food-service" class="linha">
+
+                <img src="images/home/food-service.svg" alt="">
+                <h3>Linha Food Service</h3>
+                <p>Conheça a linha Food Service, composta por chocolates, coberturas e recheios para uso profissional e doméstico.</p>
+                <a href="">
+                    <p>Ver Tudo </p> 
+                    <div class="ver-tudo">
+                        <!-- <img src="images/home/arrow-right-1.svg" alt=""> -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="produtos">
+                <div class="seta-esquerda"></div>
+
+                <div class="produto">
+                    <div class="header-produto">
+                        <div class="desconto">10% OFF</div>
+                        <img src="images/home/heart.svg" alt="">    
+                    </div>
+                    <div class="container-imagem">
+                        <img src="images/home/produto_01.png" alt="">
+                        <button class="comprar">Comprar</button>
+                    </div>
+                    <div class="nome">Recheio Forneável sabor Chocolate ao leite 5kg</div>
+                    <div class="de">R$ 120,00</div>
+                    <div class="preço">R$ 100,00</div>
+                    <div class="pagamento">5x de R$ 20,00 sem juros</div>
+                </div>
+
+                <div class="produto">
+                    <div class="header-produto">
+                        <div class="desconto oculto"></div>
+                        <img src="images/home/heart.svg" alt="">    
+                    </div>
+                    <div class="container-imagem">
+                        <img src="images/home/produto_02.png" alt="">
+                        <button class="avise-me">Avise-me</button>
+                    </div>
+                    <div class="nome">Chocolate Nutris Diet Sem Lactose 400g</div>
+                    <div class="de"></div>
+                    <div class="preço">R$ 20,00</div>
+                    <div class="pagamento">1x de R$ 20,00 sem juros</div>
+                </div>
+
+                <div class="produto">
+                    <div class="header-produto">
+                        <div class="desconto oculto"></div>
+                    </div>
+                    <div class="container-imagem">
+                        <img src="images/home/produto_03.png" alt="">
+                    </div>
+                    <div class="nome">Creme de Amendoim Zero Açúcar 150g</div>
+                    <div class="de"></div>
+                    <div class="preço">R$ 10,00</div>
+                    <div class="pagamento">1x de R$ 10,00 sem juros</div>
+                </div>
+                
+                <div class="seta-direita"></div>
+            </div>
+        </div>
+
+        <div class="banner-destaques">
+            <img src="images/home/banner_destaque_01.png" alt="">
+            <img src="images/home/banner_destaque_02.png" alt="">
+            <img src="images/home/banner_destaque_03.png" alt="">
+        </div>
+
+
+    <div class="linha-container">
+        <div id="linha-funcional" class="linha">
+
+            <img src="images/home/functional.svg" alt="">
+            <h3>Linha Funcional</h3>
+            <p>Conheça a Linha Nutris, criada para públicos específicos, tais como os diabéticos, os intolerantes à lactose e/ou ao glúten</p>
+            <a href="">
+                <p>Ver Tudo </p> 
+                <div class="ver-tudo">
+                    <!-- <img src="images/home/arrow-right-1.svg" alt=""> -->
+                </div>
+            </a>
+        </div>
+
+        <div class="produtos">
+            <div class="seta-esquerda"></div>
+
+            <div class="produto">
+                <div class="header-produto">
+                    <div class="desconto">10% OFF</div>
+                </div>
+                <div class="container-imagem">
+                    <img src="images/home/produto_01.png" alt="">
+                </div>
+                <div class="nome">Recheio Forneável sabor Chocolate ao leite 5kg</div>
+                <div class="de">R$ 120,00</div>
+                <div class="preço">R$ 100,00</div>
+                <div class="pagamento">5x de R$ 20,00 sem juros</div>
+            </div>
+
+            <div class="produto">
+                <div class="header-produto">
+                    <div class="desconto oculto"></div> 
+                </div>
+                <div class="container-imagem">
+                    <img src="images/home/produto_02.png" alt="">
+                </div>
+                <div class="nome">Chocolate Nutris Diet Sem Lactose 400g</div>
+                <div class="de"></div>
+                <div class="preço">R$ 20,00</div>
+                <div class="pagamento">1x de R$ 20,00 sem juros</div>
+            </div>
+
+            <div class="produto">
+                <div class="header-produto">
+                    <div class="desconto oculto"></div>
+                </div>
+                <div class="container-imagem">
+                    <img src="images/home/produto_03.png" alt="">
+                </div>
+                <div class="nome">Creme de Amendoim Zero Açúcar 150g</div>
+                <div class="de"></div>
+                <div class="preço">R$ 10,00</div>
+                <div class="pagamento">1x de R$ 10,00 sem juros</div>
+            </div>
+            
+            <div class="seta-direita"></div>
+        </div>           
+    </div>
+
+    <div class="banner-destaques">
+        <img src="images/home/banner_destaque_04.png" alt="">
+        <img src="images/home/banner_destaque_05.png" alt="">
+    </div>
+
+    <div class="linha-container">
+        <div id="linha-tradicional" class="linha">
+
+            <img src="images/home/star.svg" alt="">
+            <h3>Linha Tradicional</h3>
+            <p>Conheça nossos tabletes e bombons tradicionais, produzidos pelo método convencional com matéria-prima selecionada.</p>
+            <a href="">
+                <p>Ver Tudo </p> 
+                <div class="ver-tudo">
+                    <!-- <img src="images/home/arrow-right-1.svg" alt=""> -->
+                </div>
+            </a>
+        </div>
+
+        <div class="produtos">
+            <div class="seta-esquerda"></div>
+
+            <div class="produto">
+                <div class="header-produto">
+                    <div class="desconto">10% OFF</div>
+                </div>
+                <div class="container-imagem">
+                    <img src="images/home/produto_01.png" alt="">
+                </div>
+                <div class="nome">Recheio Forneável sabor Chocolate ao leite 5kg</div>
+                <div class="de">R$ 120,00</div>
+                <div class="preço">R$ 100,00</div>
+                <div class="pagamento">5x de R$ 20,00 sem juros</div>
+            </div>
+
+            <div class="produto">
+                <div class="header-produto">
+                    <div class="desconto oculto"></div> 
+                </div>
+                <div class="container-imagem">
+                    <img src="images/home/produto_02.png" alt="">
+                </div>
+                <div class="nome">Chocolate Nutris Diet Sem Lactose 400g</div>
+                <div class="de"></div>
+                <div class="preço">R$ 20,00</div>
+                <div class="pagamento">1x de R$ 20,00 sem juros</div>
+            </div>
+
+            <div class="produto">
+                <div class="header-produto">
+                    <div class="desconto oculto"></div>
+                </div>
+                <div class="container-imagem">
+                    <img src="images/home/produto_03.png" alt="">
+                </div>
+                <div class="nome">Creme de Amendoim Zero Açúcar 150g</div>
+                <div class="de"></div>
+                <div class="preço">R$ 10,00</div>
+                <div class="pagamento">1x de R$ 10,00 sem juros</div>
+            </div>
+            
+            <div class="seta-direita"></div>
+        </div>           
     </div>
 
     
-    <main>
-        <div class="banner">
-            <img src="images/home/haenssgen_banner_01_desk.png" alt="banner">
-        </div>
+
     </main>
+
+    <footer>
+        <div class="novidades">
+            <p>Receba novidades e ofertas exclusivas por e-mail</p>
+            <form action="">
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="email" id="email" name="email" placeholder="E-mail">
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </div>
+
+        <div class="info-container">
+            <div>
+                <div class="contato">
+                    <h3>Contato</h3>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
    
 
 </body>
