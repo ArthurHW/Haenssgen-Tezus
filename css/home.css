@@ -38,6 +38,10 @@ header .container {
     height: 100%;
 }
 
+/* 
+    Busca
+*/
+
 header .busca input {
 
     border: none;
@@ -62,17 +66,26 @@ header .busca input::placeholder {
     color: var(--brown-yellow);
 }
 
+/* 
+    Menu Busca
+*/
 
 header .busca input:focus ~ .menu-busca {
     display: flex;
+}
+
+header .busca .menu-busca:hover {
+    display:flex;
 }
 
 header .busca .menu-busca {
     position: absolute;
     top: 110px;
     right: calc(50% - 450px);
+
     display: none;
     height: 478px;
+
     width: 900px;
     z-index: 2;
     border: 1px solid var(--light-yellow);
@@ -112,6 +125,7 @@ header .busca .menu-busca .opcoes > div p {
     line-height: 24px;
     margin-top: 0;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 header .busca .menu-busca .opcoes > div p:last-child {
@@ -127,6 +141,7 @@ header .busca .menu-busca .opcoes .pesquisas-recentes .pesquisa {
     border-radius: 13px;
     margin-bottom: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 header .busca .menu-busca .produtos {
@@ -175,6 +190,7 @@ header .busca .menu-busca .produtos .produtos-container .produto button {
     border: none;
     outline: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 header .busca .menu-busca .produtos a {
@@ -182,6 +198,10 @@ header .busca .menu-busca .produtos a {
     text-align: center;
     font-size: 14px;
 }
+
+/* 
+    Menus (Conta, Favoritos e Carrinho)
+*/
 
 
 header .menus {
@@ -213,6 +233,8 @@ header .menus .icone-container .mensagem {
 
 .dropdown-content {
     display: none;
+    position: absolute;
+    z-index: 1;
 }
 
 .dropdown-menu {
@@ -223,9 +245,12 @@ header .menus .icone-container .mensagem {
     display: block;
 }
 
+header .menus .dropdown-conta > div {
+    padding-top: 15px;
+}
+
 header .menus .dropdown-conta .dropdown-content {
     position: absolute;
-    top: 45px;
 
     width: 150px;
     padding: 20px;
@@ -246,6 +271,99 @@ header .menus .dropdown-conta .dropdown-content li a {
     font-size: 14px;
 }
 
+header .menus .dropdown-conta .dropdown-content li a:hover {
+    color: var(--brown);
+}
+
+header .menus .dropdown-carrinho > div {
+    padding-top: 20px;
+}
+
+header .menus .dropdown-carrinho .dropdown-content {
+    position: absolute;
+    width: 300px;
+    height: 510px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--light-yellow);
+    list-style: none;
+    z-index: 2; 
+    right: 0;
+}
+
+header .menus .dropdown-carrinho .dropdown-content li .produto{
+    display: flex;
+    text-decoration: none;
+}
+
+header .menus .dropdown-carrinho .dropdown-content li .produto .produto-img {
+    width: 60px;
+    height: 60px;
+}
+
+header .menus .dropdown-carrinho .dropdown-content li .produto h2 {
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--brown);
+    line-height: 24px;
+    margin-left: 10px;
+    max-width: 140px;
+    margin-bottom: 10px;
+}
+
+header .menus .dropdown-carrinho .dropdown-content li .valor {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 20px;
+}
+
+header .menus .dropdown-carrinho .dropdown-content li > p {
+    margin-left: 70px;
+}
+
+header .menus .dropdown-carrinho .dropdown-content .info-compra {
+    display: flex;
+    flex-direction: column;
+}
+
+header .menus .dropdown-carrinho .dropdown-content .info-compra .subtotal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--brown);
+    margin-bottom: 20px;
+}
+
+header .menus .dropdown-carrinho .dropdown-content .info-compra .subtotal .valor-total {
+    font-weight: bold;
+}
+
+header .menus .dropdown-carrinho .dropdown-content .info-compra a button {
+    padding: 14px 72px;
+    border-radius: 23px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    background-color: var(--brown);
+    color: var(--light-yellow);
+    font-size: 14px;
+    font-weight: bold;  
+    cursor: pointer;
+}
+
+header .menus .dropdown-carrinho .dropdown-content .info-compra .ver-carrinho-container {
+    display: flex;
+    align-items: center;
+}
+
+header .menus .dropdown-carrinho .dropdown-content .info-compra a.ver-carrinho {
+    font-size: 14px;
+    color: var(--brown-yellow); 
+    align-self: center; 
+}
+
+
 /* 
     Linhas
 */
@@ -253,35 +371,71 @@ header .menus .dropdown-conta .dropdown-content li a {
 
 .linhas {
     height: 60px;
-    max-width: 600px;
+    width: min(700px, 90%);
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
 }
 
-.linhas li {
+.linhas > li{
     list-style-type: none;
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
 }
 
-.linhas .linha {
+.linhas li:hover  {
+    background-color: var(--light-yellow);
+}
+
+.linhas li .linha {
     color: var(--brown-yellow);
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;  
 
-    display: flex;
-    align-items: center;
     transition: .1s;
-}
-
-.linhas .linha:hover {
-    color: var(--brown);
 }
 
 .linhas .linha .icone-linha {
     margin-right: 1rem;
+    position: relative;
+    top: 5px;
 }
+
+.linhas .dropdown-linha .dropdown-content {
+    padding: 20px;
+    top: 60px;
+    background-color: var(--light-yellow);
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    list-style: none;
+}
+
+.linhas .dropdown-linha .dropdown-content li {
+    margin-bottom: 10px;
+}
+
+.linhas .dropdown-linha .dropdown-content li:last-child {
+    margin-bottom: 0;
+}
+
+.linhas .dropdown-linha .dropdown-content li a {
+    text-decoration: none;
+    color: var(--brown-yellow);
+    width: 100%;
+    font-size: 14px;
+}
+
+.linhas .dropdown-linha .dropdown-content li a:hover {
+    color: var(--brown);
+}
+
+
 
 /* 
     Main
@@ -760,6 +914,10 @@ footer .aditional-information > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+footer .aditional-information .desenvolvimento {
+    justify-self: center;
 }
 
 footer .aditional-information > div p {

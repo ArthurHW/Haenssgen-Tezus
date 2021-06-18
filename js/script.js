@@ -1,7 +1,11 @@
 const slider = document.querySelector('.slider')
 const sliderInputs = document.querySelectorAll('main .banner-container .slider input')
 const sliderBanners = document.querySelectorAll('main .banner-container .slider .banner')
-console.log(sliderBanners)
+const searchBar = document.querySelector('#pesquisa')
+
+function buscarElemento(element) {
+    searchBar.value = element.innerText
+}
 
 function animate(element) {
     element.classList.remove('animate')
