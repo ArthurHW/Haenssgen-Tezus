@@ -18,16 +18,74 @@
                 <img src="images/header/haenssgen-logo.svg" alt="logo">
             </a>
 
-            <input id="pesquisa" type="text" name="pesquisa" placeholder="O que você procura?">
-    
-            <div class="icones">
-                <div class="icone-container">
-                    <img class="icone" src="images/header/user.svg" alt="conta">
-                    <div>
-                        <div class="nome">Conta </div> 
-                        <div class="mensagem">Entrar</div>
+            <div class="busca">
+                <input id="pesquisa" type="text" name="pesquisa" placeholder="O que você procura?">
+                <div class="menu-busca">
+                    <div class="opcoes">
+                        <div class="pesquisas-populares">
+                            <h3>Pesquisas populares</h3>
+                            <p>Exemplo</p>
+                            <p>Exemplo</p>
+                            <p>Exemplo</p>
+                            <p>Exemplo</p>
+                        </div>
+                        <div class="categorias">
+                            <h3>Categorias</h3>
+                            <p>Exemplo</p>
+                        </div>
+                        <div class="pesquisas-recentes">
+                            <h3>Pesquisas recentes</h3>
+                            <div class="pesquisa">Exemplo</div>
+                            <div class="pesquisa">Exemplo</div>
+                            <div class="pesquisa">Exemplo</div>
+                            <div class="pesquisa">Exemplo</div>
+                        </div>
+                    </div>
+                    <div class="produtos">
+                        <h3>Produtos</h3>
+                        <div class="produtos-container">
+                            <div class="produto">
+                                <img src="images/home/produto_01.png" alt="">
+                                <h2>Recheio Forneável sabor Chocolate ao leite 5kg</h2>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                            <div class="produto">
+                                <img src="images/home/produto_02.png" alt="">
+                                <h2 class="nome">Chocolate Nutris Diet Sem Lactose 400g</h2>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                            <div class="produto">
+                                <img src="images/home/produto_03.png" alt="">
+                                <h2 class="nome">Creme de Amendoim Zero Açúcar 150g</h2>
+                                <button class="comprar">Comprar</button>
+                            </div>
+                        </div>
+                        <a href="">ver tudo (10)</a>
                     </div>
                 </div>
+
+            </div>
+            
+    
+            <div class="menus">
+                <div class="dropdown-conta dropdown-menu">
+                    <div class="icone-container">
+                        <img class="icone" src="images/header/user.svg" alt="conta">
+                        <div>
+                            <div class="nome">Conta </div> 
+                            <div class="mensagem">Entrar</div>
+                        </div>
+                    </div>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="">Criar conta</a>
+                        </li>
+                        <li>
+                            <a href="">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+                
 
                 <div class="icone-container">
                     <img class="icone" src="images/header/heart.svg" alt="favoritos">
@@ -48,23 +106,26 @@
         </div>
     </header>
 
-    <div class="linhas">
-
-        <a href="" class="linha">
+    <ul class="linhas">
+        <li>
+            <a href="" class="linha">
                 <img class="icone-linha" src="images/header/food-service.svg" alt="linha food-service">
                 Linha Food Service
-        </a>
-
-        <a href="" class="linha">
-            <img class="icone-linha" src="images/header/functional.svg" alt="linha funcional">
-            Linha Funcional
-        </a>
-
-        <a href="" class="linha">
-            <img class="icone-linha" src="images/header/star.svg" alt="linha tradicional">
-                Linha Tradicional
-        </a>
-    </div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="linha">
+                <img class="icone-linha" src="images/header/functional.svg" alt="linha funcional">
+                Linha Funcional
+            </a>
+        </li>
+        <li>
+            <a href="" class="linha">
+                <img class="icone-linha" src="images/header/star.svg" alt="linha tradicional">
+                    Linha Tradicional
+            </a>
+        </li>
+    </ul>
 
 
     <main>
@@ -338,12 +399,119 @@
 
         <div class="info-container">
             <div>
+
                 <div class="contato">
                     <h3>Contato</h3>
-                    <img src="" alt="">
+                    <a href="" class="contato-info">
+                        <img src="images/footer/phone.svg" alt="">
+                        <p>(51) 3764-1166</p>
+                    </a>
+                    <a href="" class="contato-info">
+                        <img src="images/footer/email.svg" alt="">
+                        <p>sac@natal.ind.br</p>
+                    </a>
+                    <a href="" class="contato-info">
+                        <img src="images/footer/XMLID_834_.svg" alt="">
+                        <p>&nbsp;&nbsp;@haenssgen</p>
+                    </a>
+                    <a href="" class="contato-info">
+                        <img src="images/footer/placeholder.svg" alt="">
+                        <p>R. Frederico Germano Haenssgen, 2074 - Cruzeiro do Sul/RS</p>
+                    </a>
+                    
+                </div>
+
+                <div class="informacoes">
+                    <h3>Informações</h3>
+                    <a href="">
+                        <p>Dúvidas Frequentes</p>
+                    </a>
+                    <a href="">
+                        <p>Formas de pagamento</p>
+                    </a>
+                    <a href="">
+                        <p>Trocas e devoluções</p>
+                    </a>
+                    <a href="">
+                        <p>Como Comprar</p>
+                    </a>
+                    <a href="">
+                        <p>Segurança</p>
+                    </a>
+                </div>
+
+                <div class="institucional">
+                    <h3>Institucional</h3>
+                    <a href="">
+                        <p>Quem Somos</p>
+                    </a>
+                    <a href="">
+                        <p>Política de Privacidade</p>
+                    </a>
+                    <a href="">
+                        <p>Termos e Condições</p>
+                    </a>
+                    <a href="">
+                        <p>Regras de Frete</p>
+                    </a>
+                    <a href="">
+                        <p>Fale Conosco</p>
+                    </a>
+                </div>
+
+                <div class="cliente">
+                    <h3>Cliente</h3>
+                    <a href="">
+                        <p>Entrar</p>
+                    </a>
+                    <a href="">
+                        <p>Criar Conta</p>
+                    </a>
+                    <a href="">
+                        <p>Pedidos</p>
+                    </a>
+                    <a href="">
+                        <p>Favoritos</p>
+                    </a>
+                    <a href="">
+                        <p>Avaliações</p>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <div class="aditional-information">
+            <div>
+                <div class="pagamento">
+                    <p>Formas de Pagamento</p>
+                    <div class="bandeiras">
+                        <img src="images/footer/americanexpress.svg" alt="">
+                        <img src="images/footer/bancodobrasil.svg" alt="">
+                        <img src="images/footer/boleto.svg" alt="">
+                        <img src="images/footer/elo.svg" alt="">
+                        <img src="images/footer/itau.svg" alt="">
+                        <img src="images/footer/mastercard.svg" alt="">
+                        <img src="images/footer/visa.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="desenvolvimento">
+                    <p>Desenvolvimento</p>
+                    <img src="images/footer/tezus_logo.svg" alt="">
+                </div>
+
+                <div class="certificados">
+                    <p>Certificados e segurança</p>
+                    <img src="images/footer/letsencrypt-logo.svg" alt="">
+                    <img src="images/footer/site-seguro.svg" alt="">
+                </div>
+            </div>
+
+            <p>
+                © 2020 Haenssgen S. A. - CNPJ: 00.000.000/0000-00
+            </p>
+        </div>
+
 
 
     </footer>
