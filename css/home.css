@@ -44,32 +44,24 @@ main .banner-container .slider li {
     width: 100%;
     list-style: none;
     position: absolute;
+    height: 100%;
 }
 
 main .banner-container .slider input {
     display: none;
 }
 
+main .banner-container .slider .img-container {
+    width: 100%;
+}
+
 main .banner-container .slider .banner {
-    background-size: cover;
-    height: 500px;  
-}
-
-main .banner-container .slider .banner.animate {
-    /* animation-name: slider-animation;
-    animation-duration: 1s; */
-}
-
-main .banner-container .slider .banner#banner1 {
-    background-image: url(../images/home/haenssgen_banner_01_desk.png);
-}
-
-main .banner-container .slider .banner#banner2 {
-    background-image: url(../images/home/haenssgen_banner_01_desk.png);
-}
-
-main .banner-container .slider .banner#banner3 {
-    background-image: url(../images/home/haenssgen_banner_01_desk.png);
+    /* object-fit: cover; */
+    position: absolute;
+    height: 100%;  
+    transition: 1s;
+    object-fit: cover;
+    width: 100%;
 }
 
 main .banner-container .slider label {
@@ -105,23 +97,12 @@ main .banner-container .slider .banner {
 main .banner-container .slider li input:checked ~ .banner {
     opacity: 1;
     visibility: visible;
-    z-index: 10;
 }
 
 main .banner-container .slider li input:checked ~ label {
     opacity: 1;
+    z-index: 10;
 } 
-
-@keyframes slider-animation {
-    from {
-        /* opacity: 0.5; */
-        transform: translate(-100vw);
-    } 
-    to {
-        opacity: 1;
-        transform: translate(0px);
-    }
-}
 
 /* 
     After Banner
@@ -137,7 +118,8 @@ main .after-banner {
 }
 
 main .after-banner .container {
-    width: min(90%, 1200px);
+    width: 98%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -168,16 +150,10 @@ main .after-banner .qualidades .adicional {
     Linhas e Produtos
 */
 
-/* 
-    Linha Food Service
-*/
-
 main .linha-container {
     margin: auto;
-    width: min(1200px, 90%);
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    width: 90%;
+    max-width: 1200px;
     position: relative;
 }
 
@@ -187,7 +163,7 @@ main .linha-container .linha {
     border-radius: 20px;
     background-color: var(--brown);
     position: absolute;
-    left:0;
+    left: 0;
 }
 
 main .linha-container .linha img{
@@ -241,12 +217,33 @@ main .linha-container .linha a .ver-tudo {
 
 main .linha-container .produtos {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     position: relative;
     top: 30px;
     margin-bottom: 100px;
-    /* position: absolute;
-    top: 30px;
-    left: 336px; */
+}
+
+main .linha-container .produtos .seta {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: var(--brown-yellow);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+main .linha-container .produtos .seta-esquerda {
+    left: 18px;
+}
+
+main .linha-container .produtos .seta-direita {
+    right: 48px;
 }
 
 main .linha-container .produtos .produto {
@@ -257,7 +254,6 @@ main .linha-container .produtos .produto {
     border-radius: 20px;
     border: 1px solid var(--light-yellow);
     margin-right: 30px;
-
 }
 
 main .linha-container .produtos .produto .header-produto {
@@ -313,10 +309,6 @@ main .linha-container .produtos .produto .container-imagem button.avise-me {
     background-color: var(--light-gray);
 }
 
-main .linha-container .produtos .produto .container-imagem .comprar {
-
-}
-
 main .linha-container .produtos .produto .nome {
     color: var(--brown);
     font-size: 16px;
@@ -349,10 +341,104 @@ main .linha-container .produtos .produto .pagamento {
 */
 
 main .banner-destaques {
-    width: min(1200px, 90%);
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
 }
 
+main .banner-destaques .slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    list-style: none;
+}
+
+main .banner-destaques .slider li input,
+main .banner-destaques .slider li label {
+    display: none;
+}
+
+@media (max-width: 1440px){
+
+    main .banner-container {
+        height: calc(320px + 10vw);
+    }
+
+    main .linha-container .produtos {
+        justify-content: center;
+    }
+
+    main .linha-container .produtos .produto:last-of-type {
+        display:none;
+    }
+
+    main .banner-destaques .slider li img {
+        width: 25vw;
+    }
+
+    main .banner-destaques > img {
+        width: 40vw;
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    main .linha-container .produtos {
+        justify-content: flex-end;
+        position: relative;
+        right: 15%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+   
+    
+}
+
+@media (max-width: 768px) {
+
+    
+    
+    main .banner-destaques .slider {
+        justify-content: center;
+    }
+
+    main .banner-destaques .slider li label {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--brown-yellow);
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        bottom: -20px;
+    }
+
+    main .banner-destaques .slider li:nth-of-type(1) label {
+        left: calc(50% - 35px);
+    }
+
+    main .banner-destaques .slider li:nth-of-type(2) label {
+        left: calc(50% - 5px);
+    }
+
+    main .banner-destaques .slider li:nth-of-type(3) label {
+        left: calc(50% + 25px);
+    }
+
+    main .banner-destaques .slider li img {
+        display: none;
+    }
+
+    main .banner-destaques .slider li input:checked ~ img {
+        display: block;
+    }
+}

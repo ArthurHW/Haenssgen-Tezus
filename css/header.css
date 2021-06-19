@@ -92,7 +92,7 @@ header .busca .menu-busca .opcoes > div h3 {
     margin-bottom: 20px;
 }
 
-header .busca .menu_-usca .opcoes .categorias h3,
+header .busca .menu-busca .opcoes .categorias h3,
 header .busca .menu-busca .opcoes .pesquisas-recentes h3 {
     margin-top: 20px;
 }
@@ -260,7 +260,6 @@ header .menus .dropdown-carrinho > div {
 header .menus .dropdown-carrinho .dropdown-content {
     position: absolute;
     width: 300px;
-    height: 510px;
     border-radius: 20px;
     padding: 20px;
     background-color: var(--light-yellow);
@@ -349,7 +348,8 @@ header .menus .dropdown-carrinho .dropdown-content .info-compra a.ver-carrinho {
 
 .linhas {
     height: 60px;
-    width: min(700px, 90%);
+    width: 90%;
+    max-width: 700px;
     margin: auto;
     display: flex;
     align-items: stretch;
@@ -363,7 +363,6 @@ header .menus .dropdown-carrinho .dropdown-content .info-compra a.ver-carrinho {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer
 }
 
 .linhas li:hover  {
@@ -411,4 +410,13 @@ header .menus .dropdown-carrinho .dropdown-content .info-compra a.ver-carrinho {
 
 .linhas .dropdown-linha .dropdown-content li a:hover {
     color: var(--brown);
+}
+
+
+@media (max-width: 1440px) {
+    header .busca input#pesquisa {
+        width: 20vw;
+    }
+
+    
 }

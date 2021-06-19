@@ -165,10 +165,10 @@
 
     <ul class="linhas">
         <li class="dropdown-menu dropdown-linha">
-            <a href="" class="linha">
+            <div class="linha">
                 <img class="icone-linha" src="images/header/food-service.svg" alt="linha food-service">
                 Linha Food Service
-            </a>
+            </div>
             <ul class="dropdown-content">
                 <li><a href="">Chocolate em pó</a></li>
                 <li><a href="">Chocolate diet</a></li>
@@ -180,10 +180,10 @@
             </ul>
         </li>
         <li class="dropdown-menu dropdown-linha">
-            <a href="" class="linha">
+            <div class="linha">
                 <img class="icone-linha" src="images/header/functional.svg" alt="linha funcional">
                 Linha Funcional
-            </a>
+            </div>
             <ul class="dropdown-content">
                 <li><a href="">Chocolate em pó</a></li>
                 <li><a href="">Chocolate diet</a></li>
@@ -195,10 +195,10 @@
             </ul>
         </li>
         <li class="dropdown-menu dropdown-linha">
-            <a href="" class="linha">
+            <div class="linha">
                 <img class="icone-linha" src="images/header/star.svg" alt="linha tradicional">
                     Linha Tradicional
-            </a>
+            </div>
             <ul class="dropdown-content">
                 <li><a href="">Chocolate em pó</a></li>
                 <li><a href="">Chocolate diet</a></li>
@@ -219,17 +219,17 @@
                 <li>
                       <input type="radio" id="slide1" name="slide" checked>
                       <label for="slide1"></label>
-                      <div id="banner1" class="banner animate"></div>
+                        <img src="images/home/haenssgen_banner_01_desk.png" id="banner1" class="banner animate"></img>
                 </li>
                 <li>
                       <input type="radio" id="slide2" name="slide">
                       <label for="slide2"></label>
-                      <div id="banner2" class="banner"></div>
+                        <img src="images/home/haenssgen_banner_01_desk.png" id="banner2" class="banner"></img>
                 </li>
                 <li>
                       <input type="radio" id="slide3" name="slide">
                       <label for="slide3"></label>
-                      <div id="banner3" class="banner"></div>
+                        <img src="images/home/haenssgen_banner_01_desk.png" id="banner3" class="banner"></img>
                 </li>
             </ul>
         </div>
@@ -286,7 +286,9 @@
             </div>
 
             <div class="produtos">
-                <div class="seta-esquerda"></div>
+                <button class="seta-esquerda seta">
+                    <img src="images/home/arrow-left-1.svg" alt="">
+                </button>
 
                 <div class="produto">
                     <div class="header-produto">
@@ -331,14 +333,30 @@
                     <div class="pagamento">1x de R$ 10,00 sem juros</div>
                 </div>
                 
-                <div class="seta-direita"></div>
+                <button class="seta-direita seta">
+                    <img src="images/home/arrow-right-2.svg" alt="">
+                </button>
             </div>
         </div>
 
         <div class="banner-destaques">
-            <img src="images/home/banner_destaque_01.png" alt="">
-            <img src="images/home/banner_destaque_02.png" alt="">
-            <img src="images/home/banner_destaque_03.png" alt="">
+            <ul class="slider">
+                <li>
+                    <input type="radio" name="banner" id="imagem1">
+                    <label for="imagem1"></label>
+                    <img src="images/home/banner_destaque_01.png" alt="">
+                </li>
+                <li>
+                    <input type="radio" name="banner" id="imagem2">
+                    <label for="imagem2"></label>
+                    <img src="images/home/banner_destaque_02.png" alt="">
+                </li>
+                <li>
+                    <input type="radio" name="banner" id="imagem3">
+                    <label for="imagem3"></label>
+                    <img src="images/home/banner_destaque_03.png" alt="">
+                </li>
+            </ul>
         </div>
 
 
@@ -357,7 +375,9 @@
         </div>
 
         <div class="produtos">
-            <div class="seta-esquerda"></div>
+            <button class="seta-esquerda seta">
+                <img src="images/home/arrow-left-1.svg" alt="">
+            </button>
 
             <div class="produto">
                 <div class="header-produto">
@@ -398,7 +418,9 @@
                 <div class="pagamento">1x de R$ 10,00 sem juros</div>
             </div>
             
-            <div class="seta-direita"></div>
+            <button class="seta-direita seta">
+                <img src="images/home/arrow-right-2.svg" alt="">
+            </button>
         </div>           
     </div>
 
@@ -422,7 +444,9 @@
         </div>
 
         <div class="produtos">
-            <div class="seta-esquerda"></div>
+            <button class="seta-esquerda seta">
+                <img src="images/home/arrow-left-1.svg" alt="">
+            </button>
 
             <div class="produto">
                 <div class="header-produto">
@@ -463,7 +487,9 @@
                 <div class="pagamento">1x de R$ 10,00 sem juros</div>
             </div>
             
-            <div class="seta-direita"></div>
+            <button class="seta-direita seta">
+                <img src="images/home/arrow-right-2.svg" alt="">
+            </button>
         </div>           
     </div>
 

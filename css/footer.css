@@ -14,7 +14,8 @@ footer {
 */
 
 footer .novidades {
-    width: 1200px;
+    width: 90%;
+    max-width: 1200px;
     height: 132px;
     border-radius: 20px;
     background-color: var(--brown);
@@ -30,6 +31,7 @@ footer .novidades p {
     font-size: 18px;
     font-weight: bold;
     width: 242px;
+    margin-right: 20px;
 }
 
 footer .novidades form {
@@ -162,4 +164,18 @@ footer .aditional-information > p {
     bottom: 20px;
     position: absolute;
     margin: auto;    
+}
+
+@media (max-width: 1440px) {
+    footer .novidades form {
+        width: 68%;
+    }
+
+    footer .novidades form input {
+        width: 35%;
+    }
+
+    footer .novidades form button {
+        width: 20%
+    }
 }
