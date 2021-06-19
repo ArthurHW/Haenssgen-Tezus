@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/home.css"> 
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/header.js" defer></script>
     <script src="js/script.js" defer></script>
     <title>Haenssgen</title>
 </head>
@@ -17,9 +18,106 @@
     <header>
         <div class="container">
 
+            <div class="menu-mobile">
+                <button class="open-menu-mobile">
+                    <div></div>
+                </button>
+                <div class="menu-mobile-content">
+                    <div class="close-container">
+                        <button class="close">X</button>
+                    </div>
+                    <ul class="conta-fav">
+                        <li class="conta">
+                            <div>
+                                <a href="">
+                                    <img src="images/header/user.svg" alt="">
+                                    <h2>Conta</h2>
+                                </a>
+                                <div class="seta"></div>
+                            </div>
+                            <ul class="submenu"> 
+                                <li><a href="">Criar conta</a></li>
+                                <li><a href="">Entrar</a></li>
+                            </ul>
+                        </li>
+                        <li class="favoritos">
+                            <div>
+                                <a href="">
+                                    <img src="images/header/heart.svg" alt="">
+                                    <h2>Favoritos</h2>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="linhas-container-mobile">
+                        <li class="linha-mobile">
+                            <div>
+                                <a href="">
+                                    <img src="images/header/food-service.svg" alt="">
+                                    <h3>Linha Food Service</h3>
+                                </a>
+                                <div class="seta"></div>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="">Chocolate em pó</a></li>
+                                <li><a href="">Chocolate diet</a></li>
+                                <li><a href="">Chocolate sem lactose</a></li>
+                                <li><a href="">Cobertura fracionada</a></li>
+                                <li><a href="">Cobertura Profissional</a></li>
+                                <li><a href="">Recheio forneável</a></li>
+                                <li><a href="">Raspar e cobrir</a></li>
+                            </ul>
+                        </li>
+                        <li class="linha-mobile">
+                            <div>
+                                <a href="">
+                                    <img src="images/header/functional.svg" alt="">
+                                    <h3>Linha Funcional</h3>    
+                                </a>
+                                <div class="seta"></div>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="">Chocolate em pó</a></li>
+                                <li><a href="">Chocolate diet</a></li>
+                                <li><a href="">Chocolate sem lactose</a></li>
+                                <li><a href="">Cobertura fracionada</a></li>
+                                <li><a href="">Cobertura Profissional</a></li>
+                                <li><a href="">Recheio forneável</a></li>
+                                <li><a href="">Raspar e cobrir</a></li>
+                            </ul>
+                        </li>
+                        <li class="linha-mobile">
+                            <div>
+                                <a href="">
+                                    <img src="images/header/star.svg" alt="">
+                                    <h3>Linha Tradicional</h3>
+                                </a>
+                                <div class="seta"></div>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="">Chocolate em pó</a></li>
+                                <li><a href="">Chocolate diet</a></li>
+                                <li><a href="">Chocolate sem lactose</a></li>
+                                <li><a href="">Cobertura fracionada</a></li>
+                                <li><a href="">Cobertura Profissional</a></li>
+                                <li><a href="">Recheio forneável</a></li>
+                                <li><a href="">Raspar e cobrir</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <a href="./">
-                <img src="images/header/haenssgen-logo.svg" alt="logo">
+                <img class="logo" src="images/header/haenssgen-logo.svg" alt="logo">
             </a>
+
+            <div class="lupa-carrinho-mobile">
+                <img class="lupa" src="images/header/search.svg" alt="">
+                <a href="">
+                    <img src="images/header/cart.svg" alt="">
+                </a>
+            </div>
 
             <div class="busca">
                 <input id="pesquisa" type="text" name="pesquisa" placeholder="O que você procura?">
@@ -162,56 +260,59 @@
                 
             </div>
         </div>
+
+        <div class="linhas-container">
+            <ul class="linhas">
+                <li class="dropdown-menu dropdown-linha">
+                    <a href="" class="linha">
+                        <img class="icone-linha" src="images/header/food-service.svg" alt="linha food-service">
+                        Linha Food Service
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="">Chocolate em pó</a></li>
+                        <li><a href="">Chocolate diet</a></li>
+                        <li><a href="">Chocolate sem lactose</a></li>
+                        <li><a href="">Cobertura fracionada</a></li>
+                        <li><a href="">Cobertura Profissional</a></li>
+                        <li><a href="">Recheio forneável</a></li>
+                        <li><a href="">Raspar e cobrir</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-menu dropdown-linha">
+                    <a href="" class="linha">
+                        <img class="icone-linha" src="images/header/functional.svg" alt="linha funcional">
+                        Linha Funcional
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="">Chocolate em pó</a></li>
+                        <li><a href="">Chocolate diet</a></li>
+                        <li><a href="">Chocolate sem lactose</a></li>
+                        <li><a href="">Cobertura fracionada</a></li>
+                        <li><a href="">Cobertura Profissional</a></li>
+                        <li><a href="">Recheio forneável</a></li>
+                        <li><a href="">Raspar e cobrir</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-menu dropdown-linha">
+                    <a href="" class="linha">
+                        <img class="icone-linha" src="images/header/star.svg" alt="linha tradicional">
+                            Linha Tradicional
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="">Chocolate em pó</a></li>
+                        <li><a href="">Chocolate diet</a></li>
+                        <li><a href="">Chocolate sem lactose</a></li>
+                        <li><a href="">Cobertura fracionada</a></li>
+                        <li><a href="">Cobertura Profissional</a></li>
+                        <li><a href="">Recheio forneável</a></li>
+                        <li><a href="">Raspar e cobrir</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
     </header>
 
-    
-    <ul class="linhas">
-        <li class="dropdown-menu dropdown-linha">
-            <div class="linha">
-                <img class="icone-linha" src="images/header/food-service.svg" alt="linha food-service">
-                Linha Food Service
-            </div>
-            <ul class="dropdown-content">
-                <li><a href="">Chocolate em pó</a></li>
-                <li><a href="">Chocolate diet</a></li>
-                <li><a href="">Chocolate sem lactose</a></li>
-                <li><a href="">Cobertura fracionada</a></li>
-                <li><a href="">Cobertura Profissional</a></li>
-                <li><a href="">Recheio forneável</a></li>
-                <li><a href="">Raspar e cobrir</a></li>
-            </ul>
-        </li>
-        <li class="dropdown-menu dropdown-linha">
-            <div class="linha">
-                <img class="icone-linha" src="images/header/functional.svg" alt="linha funcional">
-                Linha Funcional
-            </div>
-            <ul class="dropdown-content">
-                <li><a href="">Chocolate em pó</a></li>
-                <li><a href="">Chocolate diet</a></li>
-                <li><a href="">Chocolate sem lactose</a></li>
-                <li><a href="">Cobertura fracionada</a></li>
-                <li><a href="">Cobertura Profissional</a></li>
-                <li><a href="">Recheio forneável</a></li>
-                <li><a href="">Raspar e cobrir</a></li>
-            </ul>
-        </li>
-        <li class="dropdown-menu dropdown-linha">
-            <div class="linha">
-                <img class="icone-linha" src="images/header/star.svg" alt="linha tradicional">
-                    Linha Tradicional
-            </div>
-            <ul class="dropdown-content">
-                <li><a href="">Chocolate em pó</a></li>
-                <li><a href="">Chocolate diet</a></li>
-                <li><a href="">Chocolate sem lactose</a></li>
-                <li><a href="">Cobertura fracionada</a></li>
-                <li><a href="">Cobertura Profissional</a></li>
-                <li><a href="">Recheio forneável</a></li>
-                <li><a href="">Raspar e cobrir</a></li>
-            </ul>
-        </li>
-    </ul>
 
 
     <main>

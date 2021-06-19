@@ -74,7 +74,7 @@ header .busca .menu-busca {
     height: 478px;
 
     width: 900px;
-    z-index: 2;
+    z-index: 20;
     border: 1px solid var(--light-yellow);
     border-radius: 20px;
 }
@@ -485,6 +485,7 @@ header .menus .dropdown-carrinho .dropdown-content .info-compra a.ver-carrinho {
         left:0;
         position: absolute;
         width: 100%;
+        z-index: 100;
         background-color: white;
         display: none;
     }
