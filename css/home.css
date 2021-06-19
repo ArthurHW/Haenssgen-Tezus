@@ -1,26 +1,4 @@
 /* 
-    Geral
-*/
-
-:root {
-    --brown-yellow: #BE9655;
-    --brown: #502305;
-    --light-yellow: #f0e6d2;
-    --light-gray: #DFD4CE;
-    --gray: #00000029;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Sintony;
-}
-
-/* 
     Main
 */
 
@@ -386,15 +364,6 @@ main .banner-destaques .slider li label {
 
 }
 
-@media (max-width: 1250px) {
-
-    main .linha-container .produtos {
-        justify-content: flex-end;
-        position: relative;
-        right: 15%;
-    }
-
-}
 
 @media (max-width: 1024px) {
 

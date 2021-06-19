@@ -1,0 +1,21 @@
+/* 
+    Geral
+*/
+
+:root {
+    --brown-yellow: #BE9655;
+    --brown: #502305;
+    --light-yellow: #f0e6d2;
+    --light-gray: #DFD4CE;
+    --gray: #00000029;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Sintony;
+}
