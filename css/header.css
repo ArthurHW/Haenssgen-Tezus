@@ -488,6 +488,7 @@ header .menus .dropdown-carrinho .dropdown-content .info-compra a.ver-carrinho {
         z-index: 100;
         background-color: white;
         display: none;
+        min-height: 100vh;
     }
 
     header .menu-mobile .menu-mobile-content.active {
@@ -620,7 +621,9 @@ header .menus .dropdown-carrinho .dropdown-content .info-compra a.ver-carrinho {
     }
 
     header .busca {
+        background-color: white;
         position: absolute;
+        left: 0;
         top: 110px;
         display: none;
         justify-content: center;
@@ -628,6 +631,7 @@ header .menus .dropdown-carrinho .dropdown-content .info-compra a.ver-carrinho {
         height: 66px;
         width: 100%;
         border-bottom: 1px solid var(--light-yellow);
+        z-index: 20;
     }
 
     header .busca.active {
