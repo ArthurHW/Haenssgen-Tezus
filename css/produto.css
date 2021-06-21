@@ -1,0 +1,940 @@
+main .amostra-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+main .caminho-pagina {
+    color:var(--brown-yellow);
+    margin: 20px 0 40px 0;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+main .caminho-pagina span,
+main .caminho-pagina img {
+    margin-right: .5rem;
+}
+
+main .amostra-container .produto-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .amostra-container .produto-container .amostra-produto {
+    width: 55%;
+}
+
+main .amostra-container .produto-container .amostra-produto img {
+    width: 100%;
+}
+
+main .amostra-container .produto-container .amostra-produto .img-produto {
+    position: relative;
+}
+
+main button.desconto {
+    color: white;
+    background-color: var(--brown);
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 24px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+main .owl-theme .owl-dots {
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
+    right: 0;
+}
+
+main .owl-theme .owl-dots .owl-dot span {
+    background-color: var(--brown-yellow);
+    opacity: .5;
+}
+
+main .owl-theme .owl-dots .owl-dot:hover span,
+main .owl-theme .owl-dots .owl-dot.active span {
+    background-color: var(--brown-yellow);
+    opacity: 1;
+}
+
+main .amostra-container .produto-container .amostra-produto .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;    
+    margin-top: 30px;
+}
+
+
+main .amostra-container .produto-container .amostra-produto .carousel-container .seta{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: var(--brown-yellow);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+main .amostra-container .produto-container .amostra-produto .carousel-container .seta > img {
+    width: 8px;
+}
+
+main .amostra-container .produto-container .amostra-produto .carousel-container .carousel-amostra {
+    padding: 2px;
+    margin: 1px 0;
+    width: 84%;
+}
+
+main .amostra-container .produto-container .amostra-produto .carousel-amostra .owl-item .produto {
+    border-radius: 20px;
+    border: 1px solid var(--light-yellow);
+}
+
+
+main .amostra-container .produto-container .amostra-produto .carousel-amostra .owl-item.active .produto{
+    border-color: var(--brown-yellow);
+}
+
+main .amostra-container .produto-container .amostra-produto .carousel-amostra .owl-item.active ~ .owl-item.active .produto {
+    border: 1px solid var(--light-yellow);
+}
+
+/* 
+    Produto info
+*/
+
+main .amostra-container .produto-container .produto-info {
+    width: 30%;
+}
+
+main .amostra-container .produto-container .produto-info h2 {
+    font-size: 24px;
+    color: var(--brown);
+    line-height: 2rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+main .amostra-container .produto-container .produto-info .ref {
+    font-size: 14px;
+    color: var(--brown);
+    margin-bottom: 30px;
+}
+
+main .amostra-container .produto-container .produto-info .avaliacoes {
+    display:flex;
+    align-items:center;
+    margin-bottom: 30px;
+}
+
+main .amostra-container .produto-container .produto-info .avaliacoes .stars {
+    margin-right:5px;
+}
+
+main .amostra-container .produto-container .produto-info .avaliacoes a {
+    font-size: 14px;
+    color: var(--brown-yellow);
+}
+
+main .amostra-container .produto-container .produto-info .de {
+    font-size: 14px;
+    color: var(--brown-yellow);
+    text-decoration: line-through;
+    margin-bottom: 10px;
+}
+
+main .amostra-container .produto-container .produto-info .preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+main .amostra-container .produto-container .produto-info .forma-de-pagamento {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+main .amostra-container .produto-container .produto-info .forma-de-pagamento p {
+    margin-right: 5px;
+    font-size: 14px;
+    color: var(--brown);
+}
+
+main .amostra-container .produto-container .produto-info .forma-de-pagamento a {
+    font-size: 14px;
+    color: var(--brown-yellow);
+}
+
+main .amostra-container .produto-container .produto-info .quantidade {
+    margin-bottom: 40px;
+}
+
+main .amostra-container .produto-container .produto-info .quantidade p {
+    font-size: 14px;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+main .amostra-container .produto-container .produto-info .quantidade .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid var(--light-yellow);
+    background-color: white;
+    padding: 5px;
+    width: 142px;
+}
+
+main .amostra-container .produto-container .produto-info .quantidade .buttons-container button {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: var(--light-yellow);
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--brown-yellow);
+    cursor: pointer;
+}
+
+main .amostra-container .produto-container .produto-info .quantidade .buttons-container  p {
+    font-size: 16px;
+    color: var(--brown);
+}
+
+main .amostra-container .produto-container .produto-info .comprar {
+    width: 100%;
+    height: 56px;
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    background-color: var(--brown);
+    color: var(--light-yellow);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+main .amostra-container .produto-container .produto-info .frete {
+    margin-bottom: 30px;
+}
+
+main .amostra-container .produto-container .produto-info .frete p {
+    font-size: 14px;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+main .amostra-container .produto-container .produto-info .frete div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+main .amostra-container .produto-container .produto-info .frete input {
+    width: 80%;
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid var(--light-yellow);
+    color: var(--brown-yellow);
+    padding: 12px;
+    font-size: 1rem;
+    outline: none;
+    text-indent: 10px;
+    margin-right: 1rem;
+}
+
+main .amostra-container .produto-container .produto-info .frete input::placeholder {
+    color: var(--brown-yellow);
+}
+
+main .amostra-container .produto-container .produto-info .frete button {
+    background-color: var(--light-yellow);
+    height: 46px;
+    border-radius: 23px;
+    color: var(--brown-yellow);
+    border:none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .amostra-container .produto-container .produto-info .frete a {
+    color: var(--brown-yellow);
+    font-size: 14px;
+}
+
+main .amostra-container .produto-container .produto-info .icones-container {
+    display: flex;
+}
+
+main .amostra-container .produto-container .produto-info .icones-container .compartilhe {
+    margin-right: 64px;
+}
+
+main .amostra-container .produto-container .produto-info .icones-container .compartilhe p,
+main .amostra-container .produto-container .produto-info .icones-container .favorito p {
+    font-size: 14px;
+    color: var(--brown);
+    margin-bottom: 10px;
+}
+
+main .amostra-container .produto-container .produto-info .icones-container .compartilhe .icones,
+main .amostra-container .produto-container .produto-info .icones-container .favorito .icones {
+    display: flex;
+
+}
+
+main .amostra-container .produto-container .produto-info .icones-container .compartilhe .icones .icone,
+main .amostra-container .produto-container .produto-info .icones-container .favorito .icones .icone {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--light-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+/* 
+    Seção de Avaliações e Informações
+*/
+
+main .sobre-section {
+    background-color: var(--light-yellow);
+    margin-bottom: 100px;
+}
+
+main .sobre-container {
+    width: 90%;
+    max-width: 1200px;  
+    padding: 60px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .sobre-container .sobre {
+    background-color: white;
+    width: calc(50% - 15px);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+main .sobre-container .sobre-mobile {
+    display: none;
+}
+
+main .sobre-container .sobre .menus {
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid var(--light-yellow);
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+main .sobre-container .sobre .menus li {
+    cursor: pointer;
+    padding-bottom: 20px;
+    margin-right: 5px;
+}
+
+main .sobre-container .sobre .menus li.selected {
+    border-bottom: 2px solid var(--brown);
+}
+
+main .sobre-container .sobre .menus li.selected h2{
+    color: var(--brown);
+}
+
+main .sobre-container .sobre .menus li h2 {
+    font-size: 18px;
+    color: var(--brown-yellow);
+    font-weight: bold;
+}
+
+main .sobre-container .sobre .content {
+    display: none;
+}
+
+main .sobre-container .sobre .content.selected {
+    display: block;
+}
+
+main .sobre-container .sobre .content p,
+main .sobre-container .sobre-mobile p {
+    font-size: 14px;
+    color: var(--brown);
+    line-height: 1.5rem;
+}
+
+
+main .sobre-container .sobre .content h2, 
+main .sobre-container .sobre-mobile .content h2 {
+    color: var(--brown);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+main .sobre-container .sobre .content ul,
+main .sobre-container .sobre-mobile .content ul {
+    margin-left: 20px;
+}
+
+main .sobre-container .sobre .content ul li,
+main .sobre-container .sobre-mobile .content ul li {
+    color: var(--brown);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+main .sobre-container .avaliacoes {
+    width: calc(50% - 15px);
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+main .sobre-container .avaliacoes .menu-title {
+    border-bottom: 1px solid var(--light-yellow);
+}
+
+main .sobre-container .avaliacoes h2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--brown);
+    padding-bottom: 20px;
+}
+
+main .sobre-container .avaliacoes .avaliacao,
+main .avaliacoes-modal .avaliacao {
+    border-bottom: 1px solid var(--light-yellow);
+    margin-bottom: 20px;
+}
+
+main .sobre-container .avaliacoes .avaliacao h2,
+main .avaliacoes-modal .avaliacao h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    border: none;
+}
+
+main .sobre-container .avaliacoes .avaliacao .stars,
+main .avaliacoes-modal .avaliacao .stars {
+    margin-bottom: 20px;
+}
+
+main .sobre-container .avaliacoes .avaliacao p,
+main .avaliacoes-modal .avaliacao p {
+    font-size: 14px;
+    color: var(--brown);
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+}
+
+main .sobre-container .avaliacoes .avaliacao .autor .name,
+main .avaliacoes-modal .avaliacao .autor .name {
+    margin-right: 10px;
+}
+
+main .sobre-container .avaliacoes .avaliacao .autor .date,
+main .avaliacoes-modal .avaliacao .autor .date {
+    color: var(--brown-yellow);
+}
+
+main .sobre-container .avaliacoes .opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .sobre-container .avaliacoes .opcoes .avalie {
+    height: 46px;
+    padding: 0 20px;
+    color: var(--light-yellow);
+    border:none;
+    outline: none;
+    background-color: var(--brown-yellow);
+    border-radius: 23px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .sobre-container .avaliacoes .opcoes .ver-avaliacoes {
+    color: var(--brown-yellow);
+    font-size: 14px;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+/* 
+    Outros produtos
+*/
+
+main .outros-container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+main .outros-container h2 {
+    font-size: 24px;
+    color: var(--brown);
+    text-align: center;
+}
+
+main .outros-container .produtos-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: 30px;
+}
+
+main .outros-container .produtos-slider {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    position:relative;
+}
+
+main .outros-container .owl-carousel .owl-item .header-produto img {
+    width: auto;
+}
+
+main .outros-container .produtos-container .seta {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: var(--brown-yellow);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+main .outros-container .produtos-container .seta-esquerda {
+    left: -18px; 
+}
+
+main .outros-container .produtos-container .seta-direita {
+    right: -18px;
+}
+
+main .outros-container .produtos .owl-item {
+    width: calc(25% - 15px);
+}
+
+main .outros-container .produtos .owl-nav {
+    display: none;
+}
+
+main .outros-container .produtos .produto {
+    padding: 25px;
+    height: 478px;
+    
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid var(--light-yellow);
+}
+
+main .outros-container .produtos .produto .header-produto {
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+}
+
+main .outros-container .produtos .produto .header-produto .desconto {
+    background-color: var(--brown);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    height: 24px;
+    width: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .outros-container .produtos .produto .header-produto .desconto.oculto {
+    visibility: hidden;
+    opacity: 0;
+}
+
+main .outros-container .produtos .produto .container-imagem {
+    position: relative;
+}
+
+main .outros-container .produtos .produto .container-imagem button {
+    font-size: 14px;
+    font-weight: bold;
+
+    border: none;
+    height: 46px;
+    width: 90%;
+    border-radius: 23px;
+
+    position: absolute;
+    bottom: 5px;
+
+    cursor: pointer;
+}
+
+main .outros-container .produtos .produto .container-imagem button.comprar {
+    color: white;
+    background-color: var(--brown);
+    cursor: pointer;
+}
+
+main .outros-container .produtos .produto .container-imagem button.avise-me {
+    color: var(--brown);
+    background-color: var(--light-gray);
+}
+
+main .outros-container .produtos .produto .nome {
+    color: var(--brown);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+main .outros-container .produtos .produto .de {
+    text-decoration: line-through;
+    height: 18px;
+    font-size: 14px;
+    color: var(--brown-yellow);
+    margin-top: 20px;
+}
+
+main .outros-container .produtos .produto .preço {  
+    color: var(--brown);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px; 
+} 
+
+main .outros-container .produtos .produto .pagamento {
+    font-size: 14px;
+    color: var(--brown);
+    margin-top: 10px;
+}
+
+/* 
+    Modal de avaliação
+*/
+
+
+main .avalie-modal {
+    padding: 16px 40px;
+    border-radius: 20px;
+    position: fixed;
+    width: 600px;
+    top: calc(50% - 250px);
+    left: calc(50% - 300px);
+    background-color: white;
+    border: 1px solid var(--light-yellow);
+    z-index: 3;
+    display:none;
+}
+
+main .avalie-modal.open {
+    display: block;
+}
+
+main .avalie-modal .close,
+main .avaliacoes-modal .close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .avalie-modal .close button,
+main .avaliacoes-modal .close button {
+    outline: none;
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    color: var(--brown-yellow);
+    cursor: pointer;
+}
+
+main .avalie-modal h2 {
+    font-size: 18px;
+    color: var(--brown);
+    margin-bottom: 30px;
+}
+
+main .avalie-modal label,
+main .avalie-modal h3 {
+    display: block;
+    color: var(--brown);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+main .avalie-modal input {
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid var(--light-yellow);
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--brown-yellow);
+    text-indent: 20px;
+    margin-bottom: 30px;
+}
+
+main .avalie-modal input::placeholder {
+    color: var(--brown-yellow);
+}   
+
+main .avalie-modal .stars {
+    margin-bottom: 30px;
+}
+
+main .avalie-modal .stars img {
+    width: 24px;
+}
+
+main .avalie-modal form button {
+    height: 46px;
+    padding: 0 20px;
+    background-color: var(--brown-yellow);
+    color: var(--light-yellow);
+    border-radius: 23px;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main .avaliacoes-modal {
+    background-color: white;
+    position: fixed;
+    width: 650px;
+    height: 800px;
+    left: calc(50% - 325px);
+    top: calc(50% - 400px);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid  var(--light-yellow);
+    z-index: 3;
+    display: none;
+}
+
+main .avaliacoes-modal.open {
+    display:block;
+}
+
+main .avaliacoes-modal h2 {
+    font-size: 18px;
+    color: var(--brown);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-yellow);
+    margin-bottom: 20px;
+}
+
+main .avaliacoes-modal .avaliacao:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1024px) {
+    main .sobre-container .sobre .menus li h2{
+        font-size: 16px;
+    }
+
+    main .amostra-container .produto-container .produto-info {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    main .avalie-modal,
+    main .avaliacoes-modal {
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: none;
+        height: 100vh;
+        padding: 0 1rem;
+    }
+
+    main .avalie-modal form button{
+        width: 100%;
+    }
+
+    main .sobre-container {
+        flex-direction: column;
+    }
+
+    main .sobre-container .sobre {
+        display: none;
+    }
+
+    main .sobre-container .sobre-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    main .sobre-container .avaliacoes {
+        width: 100%;
+    }
+
+
+    main .amostra-container .produto-container .img-produto,
+    main .amostra-container .produto-container .amostra-produto .carousel-container .seta{
+        display: none;
+    }
+
+    main .amostra-container .produto-container {
+        flex-direction: column;
+        padding: 48px 16px;
+    }
+
+    main .amostra-container .produto-container .amostra-produto {
+        width: 100%;
+    }
+
+    main .amostra-container .produto-container .amostra-produto .carousel-container .carousel-amostra {
+        width: 100%;
+    }
+
+    main .amostra-container .produto-container .produto-info {
+        width: 100%;
+    }
+
+    main .sobre-container .sobre-mobile {
+        list-style: none;
+    }
+
+    main .sobre-container .sobre-mobile li {
+        background-color: white;
+        border-radius: 20px;
+        min-height: 54px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 1rem;
+        padding: 16px;
+    }
+
+    main .sobre-container .sobre-mobile li h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--brown);
+    }
+
+    main .sobre-container .sobre-mobile li p {
+        margin-top: 10px;
+    }
+
+    main .sobre-container .sobre-mobile li ul {
+        list-style: disc;
+    }
+
+    main .sobre-container .sobre-mobile .content ul li {
+        list-style: disc;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    main .sobre-container .menu-title ~ .content {
+        display: none;
+    }
+
+    main .sobre-container .menu-title.open ~ .content {
+        display: block;
+    }
+
+    main .sobre-container .menu-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main .sobre-container .menu-title .seta {
+        height: 8px;
+        width: 8px;
+        border-bottom: 2px solid var(--brown-yellow);
+        border-left: 2px solid var(--brown-yellow);
+        transform: rotate(-45deg);
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    main .sobre-container .menu-title.open .seta {
+        transform: rotate(135deg);
+    }
+
+
+    main .sobre-container .avaliacoes .opcoes {
+        flex-direction: column;
+    }
+
+    main .sobre-container .avaliacoes {
+        padding: 1rem;
+    }
+
+    main .sobre-container .avaliacoes .opcoes button {
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (max-width: 425px    ) {
+    main .outros-container .produtos-container .seta {
+        width: 24px;
+        height: 24px;
+    }
+
+    main .outros-container .produtos-container .seta img{
+        height: 10px;
+    }
+
+    main .outros-container .produtos-container .seta-esquerda {
+        left: -12px; 
+    }
+    
+    main .outros-container .produtos-container .seta-direita {
+        right: -12px;
+    }
+}
+

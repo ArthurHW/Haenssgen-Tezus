@@ -238,7 +238,7 @@ main .linha-container .produtos .produto .header-produto .desconto {
 }
 
 main .linha-container .produtos .produto .header-produto .desconto.oculto {
-    visibility: hidder;
+    visibility: hidden;
     opacity: 0;
 }
 
