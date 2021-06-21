@@ -15,250 +15,253 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="container-border">
+            <div class="container">
 
-            <div class="menu-mobile">
-                <button class="open-menu-mobile">
-                    <div></div>
-                </button>
-                <div class="menu-mobile-content">
-                    <div class="close-container">
-                        <button class="close">X</button>
-                    </div>
-                    <ul class="conta-fav">
-                        <li class="conta">
-                            <div>
-                                <a href="">
-                                    <img src="images/header/user.svg" alt="">
-                                    <h2>Conta</h2>
-                                </a>
-                                <div class="seta"></div>
-                            </div>
-                            <ul class="submenu"> 
-                                <li><a href="">Criar conta</a></li>
-                                <li><a href="">Entrar</a></li>
-                            </ul>
-                        </li>
-                        <li class="favoritos">
-                            <div>
-                                <a href="">
-                                    <img src="images/header/heart.svg" alt="">
-                                    <h2>Favoritos</h2>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="linhas-container-mobile">
-                        <li class="linha-mobile">
-                            <div>
-                                <a href="">
-                                    <img src="images/header/food-service.svg" alt="">
-                                    <h3>Linha Food Service</h3>
-                                </a>
-                                <div class="seta"></div>
-                            </div>
-                            <ul class="submenu">
-                                <li><a href="">Chocolate em pó</a></li>
-                                <li><a href="">Chocolate diet</a></li>
-                                <li><a href="">Chocolate sem lactose</a></li>
-                                <li><a href="">Cobertura fracionada</a></li>
-                                <li><a href="">Cobertura Profissional</a></li>
-                                <li><a href="">Recheio forneável</a></li>
-                                <li><a href="">Raspar e cobrir</a></li>
-                            </ul>
-                        </li>
-                        <li class="linha-mobile">
-                            <div>
-                                <a href="">
-                                    <img src="images/header/functional.svg" alt="">
-                                    <h3>Linha Funcional</h3>    
-                                </a>
-                                <div class="seta"></div>
-                            </div>
-                            <ul class="submenu">
-                                <li><a href="">Chocolate em pó</a></li>
-                                <li><a href="">Chocolate diet</a></li>
-                                <li><a href="">Chocolate sem lactose</a></li>
-                                <li><a href="">Cobertura fracionada</a></li>
-                                <li><a href="">Cobertura Profissional</a></li>
-                                <li><a href="">Recheio forneável</a></li>
-                                <li><a href="">Raspar e cobrir</a></li>
-                            </ul>
-                        </li>
-                        <li class="linha-mobile">
-                            <div>
-                                <a href="">
-                                    <img src="images/header/star.svg" alt="">
-                                    <h3>Linha Tradicional</h3>
-                                </a>
-                                <div class="seta"></div>
-                            </div>
-                            <ul class="submenu">
-                                <li><a href="">Chocolate em pó</a></li>
-                                <li><a href="">Chocolate diet</a></li>
-                                <li><a href="">Chocolate sem lactose</a></li>
-                                <li><a href="">Cobertura fracionada</a></li>
-                                <li><a href="">Cobertura Profissional</a></li>
-                                <li><a href="">Recheio forneável</a></li>
-                                <li><a href="">Raspar e cobrir</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <a href="./">
-                <img class="logo" src="images/header/haenssgen-logo.svg" alt="logo">
-            </a>
-
-            <div class="lupa-carrinho-mobile">
-                <img class="lupa" src="images/header/search.svg" alt="">
-                <a href="">
-                    <img src="images/header/cart.svg" alt="">
-                </a>
-            </div>
-
-            <div class="busca">
-                <input id="pesquisa" type="text" name="pesquisa" placeholder="O que você procura?">
-                <div class="menu-busca">
-                    <div class="opcoes">
-                        <div class="pesquisas-populares">
-                            <h3>Pesquisas populares</h3>
-                            <p onclick="buscarElemento(this)">Exemplo</p>
-                            <p onclick="buscarElemento(this)">Exemplo</p>
-                            <p onclick="buscarElemento(this)">Exemplo</p>
-                            <p onclick="buscarElemento(this)">Exemplo</p>
+                <div class="menu-mobile">
+                    <button class="open-menu-mobile">
+                        <div></div>
+                    </button>
+                    <div class="menu-mobile-content">
+                        <div class="close-container">
+                            <button class="close">X</button>
                         </div>
-                        <div class="categorias">
-                            <h3>Categorias</h3>
-                            <p onclick="buscarElemento(this)">Exemplo</p>
-                        </div>
-                        <div class="pesquisas-recentes">
-                            <h3>Pesquisas recentes</h3>
-                            <div onclick="buscarElemento(this)" class="pesquisa">Exemplo</div>
-                            <div onclick="buscarElemento(this)" class="pesquisa">Exemplo</div>
-                            <div onclick="buscarElemento(this)" class="pesquisa">Exemplo</div>
-                            <div onclick="buscarElemento(this)" class="pesquisa">Exemplo</div>
-                        </div>
-                    </div>
-                    <div class="produtos">
-                        <h3>Produtos</h3>
-                        <div class="produtos-container">
-                            <div class="produto">
-                                <img src="images/home/produto_01.png" alt="">
-                                <h2>Recheio Forneável sabor Chocolate ao leite 5kg</h2>
-                                <a href="products.html">
-                                    <button class="comprar">Comprar</button>
-                                </a>
-                            </div>
-                            <div class="produto">
-                                <img src="images/home/produto_02.png" alt="">
-                                <h2 class="nome">Chocolate Nutris Diet Sem Lactose 400g</h2>
-                                <a href="">
-                                    <button class="comprar">Comprar</button>
-                                </a>
-                            </div>
-                            <div class="produto">
-                                <img src="images/home/produto_03.png" alt="">
-                                <h2 class="nome">Creme de Amendoim Zero Açúcar 150g</h2>
-                                <a href="">
-                                    <button class="comprar">Comprar</button>
-                                </a>
-                            </div>
-                        </div>
-                        <a href="">ver tudo (10)</a>
-                    </div>
-                </div>
-
-            </div>
-            
-    
-            <div class="menus">
-                <div class="dropdown-conta dropdown-menu">
-                    <div class="icone-container">
-                        <img class="icone" src="images/header/user.svg" alt="conta">
-                        <div>
-                            <div class="nome">Conta </div> 
-                            <div class="mensagem">Entrar</div>
-                        </div>
-                    </div>
-                    <div>
-                        <ul class="dropdown-content">
-                            <li>
-                                <a href="">Criar conta</a>
-                            </li>
-                            <li>
-                                <a href="">Entrar</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-
-                <div class="icone-container">
-                    <img class="icone" src="images/header/heart.svg" alt="favoritos">
-                    <div>
-                        <div class="nome">Favoritos</div>
-                        <div class="mensagem">Ver todos</div>
-                    </div>
-                </div>  
-
-
-                <div class="dropdown-carrinho dropdown-menu">
-                    <div class="icone-container">
-                        <img class="icone" src="images/header/cart.svg" alt="carrinho">
-                        <div>
-                            <div class="nome">Carrinho</div>
-                            <div class="mensagem">3 produtos</div>
-                        </div>
-                    </div>
-                    <div>
-                        <ul class="dropdown-content">
-                            <li>
-                                <a href="" class="produto">
-                                    <img class="produto-img" src="images/header/produto_01.png" alt="">
-                                    <h2>Recheio Forneável sabor Chocolate ao Leite 5kg</h2>
-                                    <img src="" alt="">
-                                    <img src="" alt="">
-                                </a>
-                                <p class="valor">R$ 100,00</p>
-                            </li>
-                            <li>
-                                <a href="" class="produto"> 
-                                    <img class="produto-img" src="images/header/produto_02.png" alt="">
-                                    <h2>Chocolate Nutris Diet Sem Lactose 400g</h2>
-                                    <img src="" alt="">
-                                    <img src="" alt="">
-                                </a>
-                                <p class="valor">R$ 20,00</p>
-                            </li>
-                            <li>
-                                <a href="" class="produto">
-                                    <img class="produto-img" src="images/header/produto_03.png" alt="">
-                                    <h2>Creme de Amendoim Zero Açúcar 150g</h2>
-                                    <img src="" alt="">
-                                    <img src="" alt="">
-                                </a>
-                                <p class="valor">R$ 10,00</p>
-                            </li>
-                            <div class="info-compra">
-                                <div class="subtotal">
-                                    <p>Subtotal</p>
-                                    <p class="valor-total">R$ 130,00</p>
+                        <ul class="conta-fav">
+                            <li class="conta">
+                                <div>
+                                    <a href="">
+                                        <img src="images/header/user.svg" alt="">
+                                        <h2>Conta</h2>
+                                    </a>
+                                    <div class="seta"></div>
                                 </div>
-                                <a href="">
-                                    <button>
-                                        Finalizar Compra
-                                    </button>
-                                </a>
-                                <a class="ver-carrinho" href="">ver carrinho</a>
-                            </div>
+                                <ul class="submenu"> 
+                                    <li><a href="">Criar conta</a></li>
+                                    <li><a href="">Entrar</a></li>
+                                </ul>
+                            </li>
+                            <li class="favoritos">
+                                <div>
+                                    <a href="">
+                                        <img src="images/header/heart.svg" alt="">
+                                        <h2>Favoritos</h2>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="linhas-container-mobile">
+                            <li class="linha-mobile">
+                                <div>
+                                    <a href="">
+                                        <img src="images/header/food-service.svg" alt="">
+                                        <h3>Linha Food Service</h3>
+                                    </a>
+                                    <div class="seta"></div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="">Chocolate em pó</a></li>
+                                    <li><a href="">Chocolate diet</a></li>
+                                    <li><a href="">Chocolate sem lactose</a></li>
+                                    <li><a href="">Cobertura fracionada</a></li>
+                                    <li><a href="">Cobertura Profissional</a></li>
+                                    <li><a href="">Recheio forneável</a></li>
+                                    <li><a href="">Raspar e cobrir</a></li>
+                                </ul>
+                            </li>
+                            <li class="linha-mobile">
+                                <div>
+                                    <a href="">
+                                        <img src="images/header/functional.svg" alt="">
+                                        <h3>Linha Funcional</h3>    
+                                    </a>
+                                    <div class="seta"></div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="">Chocolate em pó</a></li>
+                                    <li><a href="">Chocolate diet</a></li>
+                                    <li><a href="">Chocolate sem lactose</a></li>
+                                    <li><a href="">Cobertura fracionada</a></li>
+                                    <li><a href="">Cobertura Profissional</a></li>
+                                    <li><a href="">Recheio forneável</a></li>
+                                    <li><a href="">Raspar e cobrir</a></li>
+                                </ul>
+                            </li>
+                            <li class="linha-mobile">
+                                <div>
+                                    <a href="">
+                                        <img src="images/header/star.svg" alt="">
+                                        <h3>Linha Tradicional</h3>
+                                    </a>
+                                    <div class="seta"></div>
+                                </div>
+                                <ul class="submenu">
+                                    <li><a href="">Chocolate em pó</a></li>
+                                    <li><a href="">Chocolate diet</a></li>
+                                    <li><a href="">Chocolate sem lactose</a></li>
+                                    <li><a href="">Cobertura fracionada</a></li>
+                                    <li><a href="">Cobertura Profissional</a></li>
+                                    <li><a href="">Recheio forneável</a></li>
+                                    <li><a href="">Raspar e cobrir</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
+    
+                <a href="./">
+                    <img class="logo" src="images/header/haenssgen-logo.svg" alt="logo">
+                </a>
+    
+                <div class="lupa-carrinho-mobile">
+                    <img class="lupa" src="images/header/search.svg" alt="">
+                    <a href="">
+                        <img src="images/header/cart.svg" alt="">
+                    </a>
+                </div>
+    
+                <div class="busca">
+                    <input id="pesquisa" type="text" name="pesquisa" placeholder="O que você procura?">
+                    <div class="menu-busca">
+                        <div class="opcoes">
+                            <div class="pesquisas-populares">
+                                <h3>Pesquisas populares</h3>
+                                <p onclick="buscarElemento(this)">Exemplo</p>
+                                <p onclick="buscarElemento(this)">Exemplo</p>
+                                <p onclick="buscarElemento(this)">Exemplo</p>
+                                <p onclick="buscarElemento(this)">Exemplo</p>
+                            </div>
+                            <div class="categorias">
+                                <h3>Categorias</h3>
+                                <p onclick="buscarElemento(this)">Exemplo</p>
+                            </div>
+                            <div class="pesquisas-recentes">
+                                <h3>Pesquisas recentes</h3>
+                                <div onclick="buscarElemento(this)" class="pesquisa">Exemplo</div>
+                                <div onclick="buscarElemento(this)" class="pesquisa">Exemplo</div>
+                                <div onclick="buscarElemento(this)" class="pesquisa">Exemplo</div>
+                                <div onclick="buscarElemento(this)" class="pesquisa">Exemplo</div>
+                            </div>
+                        </div>
+                        <div class="produtos">
+                            <h3>Produtos</h3>
+                            <div class="produtos-container">
+                                <div class="produto">
+                                    <img src="images/home/produto_01.png" alt="">
+                                    <h2>Recheio Forneável sabor Chocolate ao leite 5kg</h2>
+                                    <a href="products.html">
+                                        <button class="comprar">Comprar</button>
+                                    </a>
+                                </div>
+                                <div class="produto">
+                                    <img src="images/home/produto_02.png" alt="">
+                                    <h2 class="nome">Chocolate Nutris Diet Sem Lactose 400g</h2>
+                                    <a href="">
+                                        <button class="comprar">Comprar</button>
+                                    </a>
+                                </div>
+                                <div class="produto">
+                                    <img src="images/home/produto_03.png" alt="">
+                                    <h2 class="nome">Creme de Amendoim Zero Açúcar 150g</h2>
+                                    <a href="">
+                                        <button class="comprar">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="">ver tudo (10)</a>
+                        </div>
+                    </div>
+    
+                </div>
                 
+        
+                <div class="menus">
+                    <div class="dropdown-conta dropdown-menu">
+                        <div class="icone-container">
+                            <img class="icone" src="images/header/user.svg" alt="conta">
+                            <div>
+                                <div class="nome">Conta </div> 
+                                <div class="mensagem">Entrar</div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="">Criar conta</a>
+                                </li>
+                                <li>
+                                    <a href="">Entrar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+    
+                    <div class="icone-container">
+                        <img class="icone" src="images/header/heart.svg" alt="favoritos">
+                        <div>
+                            <div class="nome">Favoritos</div>
+                            <div class="mensagem">Ver todos</div>
+                        </div>
+                    </div>  
+    
+    
+                    <div class="dropdown-carrinho dropdown-menu">
+                        <div class="icone-container">
+                            <img class="icone" src="images/header/cart.svg" alt="carrinho">
+                            <div>
+                                <div class="nome">Carrinho</div>
+                                <div class="mensagem">3 produtos</div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="" class="produto">
+                                        <img class="produto-img" src="images/header/produto_01.png" alt="">
+                                        <h2>Recheio Forneável sabor Chocolate ao Leite 5kg</h2>
+                                        <img src="" alt="">
+                                        <img src="" alt="">
+                                    </a>
+                                    <p class="valor">R$ 100,00</p>
+                                </li>
+                                <li>
+                                    <a href="" class="produto"> 
+                                        <img class="produto-img" src="images/header/produto_02.png" alt="">
+                                        <h2>Chocolate Nutris Diet Sem Lactose 400g</h2>
+                                        <img src="" alt="">
+                                        <img src="" alt="">
+                                    </a>
+                                    <p class="valor">R$ 20,00</p>
+                                </li>
+                                <li>
+                                    <a href="" class="produto">
+                                        <img class="produto-img" src="images/header/produto_03.png" alt="">
+                                        <h2>Creme de Amendoim Zero Açúcar 150g</h2>
+                                        <img src="" alt="">
+                                        <img src="" alt="">
+                                    </a>
+                                    <p class="valor">R$ 10,00</p>
+                                </li>
+                                <div class="info-compra">
+                                    <div class="subtotal">
+                                        <p>Subtotal</p>
+                                        <p class="valor-total">R$ 130,00</p>
+                                    </div>
+                                    <a href="">
+                                        <button>
+                                            Finalizar Compra
+                                        </button>
+                                    </a>
+                                    <a class="ver-carrinho" href="">ver carrinho</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
+        
 
         <div class="linhas-container">
             <ul class="linhas">
@@ -312,11 +315,13 @@
         
     </header>
 
-    <div class="teste">
+    <main>
+        <div class="container">
+            
+        </div>
+    </main>
 
-    </div>
-
-    <footer>
+    <!-- <footer>
         <div class="novidades">
             <p>Receba novidades e ofertas exclusivas por e-mail</p>
             <form action="">
@@ -439,7 +444,7 @@
             </p>
         </div>
         
-    </footer>
+    </footer> -->
 
     
   

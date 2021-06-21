@@ -6,81 +6,39 @@
     Banner
 */
 
-main .banner-container {
-    position: relative;
+
+main .banner-slider {
     height: 500px;
-    /* background-image: url(../images/home/haenssgen_banner_01_desk.png); */
 }
 
-main .banner-container .slider {
-    display: block;
-    position: relative;
-    height: 100%;
-}
-
-main .banner-container .slider li {
-    width: 100%;
-    list-style: none;
-    position: absolute;
-    height: 100%;
-}
-
-main .banner-container .slider input {
+main .banner-slider.mobile {
     display: none;
 }
 
-main .banner-container .slider .img-container {
-    width: 100%;
+main .banner-slider.owl-theme .owl-stage-outer .owl-stage .owl-item img{
+    height: 500px;
+    object-fit:cover;
 }
 
-main .banner-container .slider .banner {
-    /* object-fit: cover; */
+main .banner-slider.owl-theme .owl-dots {
     position: absolute;
-    height: 100%;  
-    transition: 1s;
-    object-fit: cover;
-    width: 100%;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
 }
 
-main .banner-container .slider label {
+main .owl-theme .owl-dots .owl-dot span {
     background-color: var(--brown-yellow);
     opacity: .5;
-    border-radius: 50%;
-    bottom: 20px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
 }
 
-main .banner-container .slider li:nth-child(1) label {
-    left: calc(50% - 35px);
-}
-
-main .banner-container .slider li:nth-child(2) label {
-    left: calc(50% - 5px)
-}
-
-main .banner-container .slider li:nth-child(3) label {
-    left: calc(50% + 25px);
-}
-
-main .banner-container .slider .banner {
-    opacity: 0;
-    visibility: hidden;
-}
-
-main .banner-container .slider li input:checked ~ .banner {
+main .owl-theme .owl-dots .owl-dot:hover span,
+main .owl-theme .owl-dots .owl-dot:focus span,
+main .owl-theme .owl-dots .owl-dot.active span {
+    background-color: var(--brown-yellow);
     opacity: 1;
-    visibility: visible;
 }
 
-main .banner-container .slider li input:checked ~ label {
-    opacity: 1;
-    z-index: 10;
-} 
 
 /* 
     After Banner
@@ -170,6 +128,13 @@ main .linha-container .linha a {
     justify-content: flex-start;
     align-items: center;
     max-width: 100px;
+    position:relative;
+    z-index:5;
+    height: 20px;
+}
+
+main .linha-container .linha a:hover p {
+    color: white;
 }
 
 main .linha-container .linha a p {
@@ -193,16 +158,27 @@ main .linha-container .linha a .ver-tudo {
     Produtos
 */
 
-main .linha-container .produtos {
+main .linha-container .produtos-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     position: relative;
     top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 
-main .linha-container .produtos .seta {
+main .linha-container .produtos-slider {
+    width: 70%;
+    display:flex;
+    align-items: center;
+    position:relative;
+}
+
+main .linha-container .owl-carousel .owl-item .header-produto img {
+    width: auto;
+}
+
+main .linha-container .produtos-container .seta {
     height: 36px;
     width: 36px;
     border-radius: 50%;
@@ -213,25 +189,33 @@ main .linha-container .produtos .seta {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    z-index: 2;
 }
 
-main .linha-container .produtos .seta-esquerda {
-    left: 18px;
+main .linha-container .produtos-container .seta-esquerda {
+    left: -18px; 
 }
 
-main .linha-container .produtos .seta-direita {
-    right: 48px;
+main .linha-container .produtos-container .seta-direita {
+    right: -18px;
+}
+
+main .linha-container .produtos .owl-item {
+    width: calc(33% - 15px);
+}
+
+main .linha-container .produtos .owl-nav {
+    display: none;
 }
 
 main .linha-container .produtos .produto {
     padding: 25px;
-    width: 276px;
+    height: 478px;
     
     background-color: white;
     border-radius: 20px;
     border: 1px solid var(--light-yellow);
-    margin-right: 30px;
 }
 
 main .linha-container .produtos .produto .header-produto {
@@ -268,7 +252,7 @@ main .linha-container .produtos .produto .container-imagem button {
 
     border: none;
     height: 46px;
-    width: 236px;
+    width: 90%;
     border-radius: 23px;
 
     position: absolute;
@@ -335,9 +319,22 @@ main .banner-destaques .slider {
     list-style: none;
 }
 
+main .banner-destaques .slider .owl-item {
+    width: calc(33% - 15px);
+}
+
+main .banner-destaques .slider li img {
+    width: 100%;
+}
+
+
 main .banner-destaques .slider li input,
 main .banner-destaques .slider li label {
     display: none;
+}
+
+main .banner-destaques > img {
+    width: calc(50% - 15px);
 }
 
 @media (max-width: 1440px){
@@ -346,68 +343,152 @@ main .banner-destaques .slider li label {
         height: calc(320px + 10vw);
     }
 
-    main .linha-container .produtos {
-        justify-content: center;
-    }
-
-    main .linha-container .produtos .produto:last-of-type {
-        display:none;
-    }
-
-    main .banner-destaques .slider li img {
-        width: 25vw;
-    }
-
-    main .banner-destaques > img {
-        width: 40vw;
-    }
+    
 
 }
 
 
 @media (max-width: 1024px) {
 
-   
+    main .linha-container .linha {
+        width: 400px;
+    }
+
+    main .linha-container .produtos .produto {
+        height: auto;
+    }
     
 }
 
 @media (max-width: 768px) {
 
-    
+    main .banner-slider.owl-carousel {
+        display:none;
+    }
+
+    main .after-banner {
+        height: 108px;
+    }
+
+    main .banner-slider.owl-theme .owl-stage-outer .owl-stage .owl-item img {
+        height: auto;
+    }
+
+    main .banner-slider.mobile {
+        display: block;
+        height: auto;
+    }
+
+    main .linha-container {
+        margin-bottom: 390px;
+    }
+
+    main .linha-container:last-of-type {
+        margin-bottom: 200px;
+    }
+
+    main .linha-container .linha {
+        width: 100%;
+    }
+
+    main .linha-container .linha a {
+        margin-bottom: 50px;
+    }
+
+    main .linha-container .linha > p {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    main .linha-container .produtos-container {
+        top: 260px; 
+    }
+
+    main .linha-container .produtos-slider {
+        width: 100%;
+    }
+
+
+    main .linha-container .produtos .produto {
+        padding:1rem;
+    }
+
+    main .linha-container .produtos .produto button {
+        display:none;
+    }
+
+    main .linha-container .produtos .owl-item {
+        width: calc(50% - 15px);
+    }
+
+    main .after-banner .container {
+        justify-content: center;
+    }
+
+    main .after-banner .qualidades.hide-mobile {
+        display:none;
+    }
+
+    main .banner-destaques .slider {
+        flex-direction: column;
+    }
     
     main .banner-destaques .slider {
         justify-content: center;
     }
 
-    main .banner-destaques .slider li label {
-        display: block;
-        width: 10px;
+}
+
+@media (max-width: 425px) {
+
+    main .linha-container .produtos .produto {
+        height: 410px;
+    }
+
+    main .linha-container .produtos-container {
+        top: 290px; 
+    }
+
+    main .linha-container .produtos-container .seta {
+        width: 24px;
+        height: 24px;
+    }
+
+    main .linha-container .produtos-container .seta img{
         height: 10px;
-        border-radius: 50%;
-        background-color: var(--brown-yellow);
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        bottom: -20px;
     }
 
-    main .banner-destaques .slider li:nth-of-type(1) label {
-        left: calc(50% - 35px);
+    main .linha-container .produtos-container .seta-esquerda {
+        left: -12px; 
+    }
+    
+    main .linha-container .produtos-container .seta-direita {
+        right: -12px;
     }
 
-    main .banner-destaques .slider li:nth-of-type(2) label {
-        left: calc(50% - 5px);
+    main .linha-container {
+        margin-bottom: 400px;
     }
 
-    main .banner-destaques .slider li:nth-of-type(3) label {
-        left: calc(50% + 25px);
+    main .banner-destaques {
+        margin-bottom: 90px;
+    }
+} 
+
+@media (max-width: 320px) {
+    main .linha-container .produtos-container {
+        top: 310px; 
     }
 
-    main .banner-destaques .slider li img {
-        display: none;
+    main .linha-container {
+        margin-bottom: 350px;
     }
 
-    main .banner-destaques .slider li input:checked ~ img {
-        display: block;
+    main .banner-destaques {
+        margin-bottom: 50px;
+    }
+
+    main .linha-container:last-of-type {
+        margin-bottom: 210px;
     }
 }
